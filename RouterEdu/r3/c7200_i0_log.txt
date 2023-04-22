@@ -1,0 +1,834 @@
+Oct 17 01:33:05.538 disk0: C/H/S settings = 1024/4/32
+Oct 17 01:33:05.561 CONSOLE: console managed by I/O board
+Oct 17 01:33:05.978 C7200_BOOT: starting instance (CPU0 PC=0xffffffffbfc00000,idle_pc=0x6095ca40,JIT on)
+Oct 17 01:33:05.978 CPU0: CPU_STATE: Starting CPU (old state=2)...
+Oct 17 01:33:06.143 ROM: Microcode has started.
+Oct 17 01:33:25.096 ROM: trying to read bootvar 'WARM_REBOOT'
+Oct 17 01:33:25.124 ROM: unhandled syscall 0x00000032 at pc=0x608487b0 (a1=0x00000019,a2=0x64cb7930,a3=0x652b3288)
+Oct 17 01:33:25.124 CPU0: IO_FPGA: read from addr 0x224, pc=0x60925770 (size=1)
+Oct 17 01:33:25.452 ROM: trying to read bootvar 'RANDOM_NUM'
+Oct 17 01:33:25.491 CPU0: MP_FPGA: writing reg 0x70 at pc=0x6095ce24 (data=0x7e)
+Oct 17 01:33:25.492 CPU0: PCI: read request at pc=0x60943c1c: bus=0,device=0,function=0,reg=0x08
+Oct 17 01:33:25.492 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=0,function=0,reg=0x00
+Oct 17 01:33:25.492 CPU0: PCI: write request (data=0x0000011f) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x04
+Oct 17 01:33:25.492 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x10
+Oct 17 01:33:25.492 CPU0: PCI: write request (data=0x10000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x14
+Oct 17 01:33:25.492 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=0,function=0,reg=0x00
+Oct 17 01:33:25.492 CPU0: PCI: write request (data=0xc0000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x28
+Oct 17 01:33:25.492 CPU0: PCI: write request (data=0xd0000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x2c
+Oct 17 01:33:25.492 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x30
+Oct 17 01:33:25.492 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=0,function=0,reg=0x34
+Oct 17 01:33:25.492 CPU0: PCI: write request (data=0x00000001) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x34
+Oct 17 01:33:25.492 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x18
+Oct 17 01:33:25.492 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x1c
+Oct 17 01:33:25.492 CPU0: PCI: write request (data=0x000000ff) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x0c
+Oct 17 01:33:25.495 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=1,function=0,reg=0x00
+Oct 17 01:33:25.495 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=1,function=0,reg=0x40
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x00000143) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x04
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x00000010) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x0c
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:25.495 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0xffff9f40) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x1c
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x4af04880) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x20
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x4bf04b00) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x24
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x3c
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x40
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x44
+Oct 17 01:33:25.495 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=2,function=0,reg=0x00
+Oct 17 01:33:25.495 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=2,function=0,reg=0x40
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x00000144) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x04
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x0c
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x18090400) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x18
+Oct 17 01:33:25.495 PCI: PCI bridge 0,2,0 -> pri: 00, sec: 04, sub: 09
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0xffff9f40) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x1c
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x4af04880) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x20
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x4cf04b00) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x24
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x3c
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x40
+Oct 17 01:33:25.495 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x44
+Oct 17 01:33:25.496 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=3,function=0,reg=0x00
+Oct 17 01:33:25.496 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=3,function=0,reg=0x40
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x00000143) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x04
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x00000010) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x0c
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x18000200) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
+Oct 17 01:33:25.496 PCI: PCI bridge 0,3,0 -> pri: 00, sec: 02, sub: 00
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0xffffffa0) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x1c
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x4f704d00) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x20
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x4cf04c00) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x24
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x3c
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x40
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x44
+Oct 17 01:33:25.496 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=4,function=0,reg=0x00
+Oct 17 01:33:25.496 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=4,function=0,reg=0x40
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x00000144) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x04
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x0c
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x180f0a00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x18
+Oct 17 01:33:25.496 PCI: PCI bridge 0,4,0 -> pri: 00, sec: 10, sub: 15
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0xffffffa0) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x1c
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x4f704d00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x20
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x4cf04b00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x24
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x3c
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x40
+Oct 17 01:33:25.496 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x44
+Oct 17 01:33:25.516 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=5,function=0,reg=0x00
+Oct 17 01:33:25.516 CPU0: PCI: write request (data=0x000001c3) at pc=0x60943d4c: bus=0,device=5,function=0,reg=0x04
+Oct 17 01:33:25.516 CPU0: PCI: write request (data=0x00000400) at pc=0x60943d4c: bus=0,device=5,function=0,reg=0x10
+Oct 17 01:33:27.002 CPU0: JIT: partial JIT flush (count=176)
+Oct 17 01:33:27.107 CPU0: JIT: flushing data structures (compiled pages=231)
+Oct 17 01:33:27.184 CPU0: JIT: partial JIT flush (count=177)
+Oct 17 01:33:27.209 ROM: trying to read bootvar 'BOOT'
+Oct 17 01:33:27.209 ROM: trying to read bootvar 'CONFIG_FILE'
+Oct 17 01:33:27.209 ROM: trying to read bootvar 'BOOTLDR'
+Oct 17 01:33:27.209 ROM: trying to read bootvar 'RSHELF'
+Oct 17 01:33:27.209 ROM: trying to read bootvar 'DSHELF'
+Oct 17 01:33:27.210 ROM: trying to read bootvar 'DSHELFINFO'
+Oct 17 01:33:27.210 ROM: trying to read bootvar 'RESET_COUNTER'
+Oct 17 01:33:27.210 ROM: trying to read bootvar 'CHRG_LOCRECSN'
+Oct 17 01:33:27.210 ROM: trying to read bootvar 'CHRG_ID'
+Oct 17 01:33:27.210 ROM: trying to read bootvar 'SLOTCACHE'
+Oct 17 01:33:27.210 ROM: trying to read bootvar 'OVERTEMP'
+Oct 17 01:33:27.210 ROM: trying to read bootvar 'DIAG'
+Oct 17 01:33:27.210 ROM: trying to read bootvar 'WARM_REBOOT'
+Oct 17 01:33:28.265 CPU0: JIT: flushing data structures (compiled pages=236)
+Oct 17 01:33:28.298 ROM: unhandled syscall 0x0000007c at pc=0x608487b0 (a1=0x000003b0,a2=0x00000000,a3=0x65381788)
+Oct 17 01:33:28.299 ROM: unhandled syscall 0x0000007c at pc=0x608487b0 (a1=0x6316dafd,a2=0x00000016,a3=0x650eea8c)
+Oct 17 01:33:28.300 CPU0: PCI: read request at pc=0x609821a4: bus=0,device=0,function=0,reg=0x08
+Oct 17 01:33:28.300 CPU0: CLPD6729: ext reg index 0x03 at pc=0x60987ec8
+Oct 17 01:33:28.300 CPU0: CLPD6729: ext reg index 0x03 at pc=0x60987ec8
+Oct 17 01:33:28.307 CPU0: CLPD6729: ext reg index 0x09 at pc=0x60987ec8
+Oct 17 01:33:28.307 CPU0: CLPD6729: ext reg index 0x09 at pc=0x60987ec8
+Oct 17 01:33:28.307 CPU0: CLPD6729: ext reg index 0x05 at pc=0x60987ec8
+Oct 17 01:33:28.308 CPU0: CLPD6729: ext reg index 0x05 at pc=0x60987ec8
+Oct 17 01:33:28.335 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:28.335 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:28.335 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=0,function=0,reg=0x00
+Oct 17 01:33:28.335 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:28.335 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:28.335 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:28.335 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:28.335 CPU0: PCI: write request (data=0x00000142) at pc=0x60943d4c: bus=4,device=0,function=0,reg=0x04
+Oct 17 01:33:28.335 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:28.335 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:28.335 CPU0: PCI: write request (data=0x1800020a) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
+Oct 17 01:33:28.335 PCI: PCI bridge 0,3,0 -> pri: 10, sec: 02, sub: 00
+Oct 17 01:33:28.335 CPU0: PCI: read request at pc=0x60943e40: bus=10,device=0,function=0,reg=0x00
+Oct 17 01:33:28.335 CPU0: PCI: write request (data=0x18000200) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
+Oct 17 01:33:28.335 PCI: PCI bridge 0,3,0 -> pri: 00, sec: 02, sub: 00
+Oct 17 01:33:28.335 CPU0: PCI: write request (data=0x1800020a) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
+Oct 17 01:33:28.335 PCI: PCI bridge 0,3,0 -> pri: 10, sec: 02, sub: 00
+Oct 17 01:33:28.335 CPU0: PCI: write request (data=0x00000142) at pc=0x60943d4c: bus=10,device=0,function=0,reg=0x04
+Oct 17 01:33:28.335 CPU0: PCI: write request (data=0x18000200) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
+Oct 17 01:33:28.335 PCI: PCI bridge 0,3,0 -> pri: 00, sec: 02, sub: 00
+Oct 17 01:33:28.408 Calendar: reset
+Oct 17 01:33:28.425 CPU0: JIT: partial JIT flush (count=177)
+Oct 17 01:33:28.477 CPU0: JIT: flushing data structures (compiled pages=240)
+Oct 17 01:33:28.550 CPU0: JIT: partial JIT flush (count=197)
+Oct 17 01:33:28.587 ROM: trying to read bootvar 'BOOTLDR'
+Oct 17 01:33:28.588 ROM: trying to read bootvar 'CONFIG_FILE'
+Oct 17 01:33:28.934 CPU0: MP_FPGA: writing reg 0x70 at pc=0x609615d0 (data=0x2)
+Oct 17 01:33:29.239 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.239 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.239 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x00
+Oct 17 01:33:29.239 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.239 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.239 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.239 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.239 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x08
+Oct 17 01:33:29.239 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.239 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.239 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.239 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.239 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x00
+Oct 17 01:33:29.239 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.239 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.240 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.240 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x40
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.240 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.240 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0xffff0000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x04
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.240 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.240 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0x0000ff08) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x0c
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.240 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.240 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0x18050504) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x18
+Oct 17 01:33:29.240 PCI: PCI bridge 4,1,0 -> pri: 04, sec: 05, sub: 05
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.240 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.240 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x02805f40) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x1c
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x48f04880) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x20
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x0001ff01) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x24
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x30
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x03030000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x3c
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x02000000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x40
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x64
+Oct 17 01:33:29.241 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.241 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.242 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.242 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.242 CPU0: PCI: write request (data=0x000001ff) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x68
+Oct 17 01:33:29.242 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.242 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.242 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.242 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Oct 17 01:33:29.242 CPU0: PCI: write request (data=0x00000147) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x04
+Oct 17 01:33:29.242 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.242 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.494 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x00
+Oct 17 01:33:29.494 CPU0: PCI: write request (data=0x00000006) at pc=0x60943d4c: bus=0,device=6,function=0,reg=0x04
+Oct 17 01:33:29.494 CPU0: PCI: write request (data=0x480c0000) at pc=0x60943d4c: bus=0,device=6,function=0,reg=0x14
+Oct 17 01:33:29.494 C7200-IO-FE(0): registers are mapped at 0x480c0000
+Oct 17 01:33:29.494 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=0,device=6,function=0,reg=0x0c
+Oct 17 01:33:29.504 CPU0: JIT: flushing data structures (compiled pages=239)
+Oct 17 01:33:29.525 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Oct 17 01:33:29.538 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.538 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.538 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x00
+Oct 17 01:33:29.538 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.538 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.538 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.538 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.538 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x00
+Oct 17 01:33:29.538 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.538 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.538 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.538 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.538 CPU0: PCI: write request (data=0x00000006) at pc=0x60943d4c: bus=5,device=0,function=0,reg=0x04
+Oct 17 01:33:29.538 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.539 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.539 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.539 C7200-IO-FE(0): unicast MAC address: ca:00:7d:44:00:00
+Oct 17 01:33:29.539 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.539 CPU0: PCI: write request (data=0x48800000) at pc=0x60943d4c: bus=5,device=0,function=0,reg=0x14
+Oct 17 01:33:29.539 PA-FE-TX(1): registers are mapped at 0x48800000
+Oct 17 01:33:29.539 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.539 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.539 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.539 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.539 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=5,device=0,function=0,reg=0x0c
+Oct 17 01:33:29.539 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.539 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.551 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.551 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.551 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Oct 17 01:33:29.551 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.551 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=1,function=0,reg=0x00
+Oct 17 01:33:29.557 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=1,function=0,reg=0x00).
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=2,function=0,reg=0x00
+Oct 17 01:33:29.557 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=2,function=0,reg=0x00).
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=3,function=0,reg=0x00
+Oct 17 01:33:29.557 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=3,function=0,reg=0x00).
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=4,function=0,reg=0x00
+Oct 17 01:33:29.557 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=4,function=0,reg=0x00).
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=5,function=0,reg=0x00
+Oct 17 01:33:29.557 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=5,function=0,reg=0x00).
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=6,function=0,reg=0x00
+Oct 17 01:33:29.557 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=6,function=0,reg=0x00).
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.557 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=7,function=0,reg=0x00
+Oct 17 01:33:29.557 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=7,function=0,reg=0x00).
+Oct 17 01:33:29.557 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.557 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.558 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=8,function=0,reg=0x00
+Oct 17 01:33:29.558 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=8,function=0,reg=0x00).
+Oct 17 01:33:29.558 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.558 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.558 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=9,function=0,reg=0x00
+Oct 17 01:33:29.558 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=9,function=0,reg=0x00).
+Oct 17 01:33:29.558 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.558 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.558 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=10,function=0,reg=0x00
+Oct 17 01:33:29.558 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=10,function=0,reg=0x00).
+Oct 17 01:33:29.558 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.558 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.558 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=11,function=0,reg=0x00
+Oct 17 01:33:29.558 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=11,function=0,reg=0x00).
+Oct 17 01:33:29.558 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.558 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.558 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=12,function=0,reg=0x00
+Oct 17 01:33:29.558 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=12,function=0,reg=0x00).
+Oct 17 01:33:29.558 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.558 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.558 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.558 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=13,function=0,reg=0x00
+Oct 17 01:33:29.559 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=13,function=0,reg=0x00).
+Oct 17 01:33:29.559 PA-FE-TX(1): unicast MAC address: ca:00:7d:44:00:1c
+Oct 17 01:33:29.559 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.559 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.559 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.559 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.559 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=14,function=0,reg=0x00
+Oct 17 01:33:29.559 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=14,function=0,reg=0x00).
+Oct 17 01:33:29.559 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.559 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.559 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.559 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.559 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=15,function=0,reg=0x00
+Oct 17 01:33:29.559 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=15,function=0,reg=0x00).
+Oct 17 01:33:29.559 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.559 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.578 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Oct 17 01:33:29.580 C7200-IO-FE(0): unicast MAC address: ca:00:7d:44:00:00
+Oct 17 01:33:29.581 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.581 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.581 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Oct 17 01:33:29.581 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.581 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.583 PA-FE-TX(1): unicast MAC address: ca:00:7d:44:00:1c
+Oct 17 01:33:29.590 CPU0: JIT: partial JIT flush (count=189)
+Oct 17 01:33:29.656 CPU0: JIT: flushing data structures (compiled pages=237)
+Oct 17 01:33:29.734 CPU0: JIT: partial JIT flush (count=190)
+Oct 17 01:33:29.796 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Oct 17 01:33:29.804 C7200-IO-FE(0): unicast MAC address: ca:00:7d:44:00:00
+Oct 17 01:33:29.804 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.804 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.804 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Oct 17 01:33:29.804 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.804 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.806 CPU0: JIT: flushing data structures (compiled pages=242)
+Oct 17 01:33:29.807 PA-FE-TX(1): unicast MAC address: ca:00:7d:44:00:1c
+Oct 17 01:33:29.888 CPU0: JIT: partial JIT flush (count=176)
+Oct 17 01:33:29.902 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Oct 17 01:33:29.912 C7200-IO-FE(0): unicast MAC address: ca:00:7d:44:00:00
+Oct 17 01:33:29.913 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.913 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.913 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Oct 17 01:33:29.913 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.913 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.915 PA-FE-TX(1): unicast MAC address: ca:00:7d:44:00:1c
+Oct 17 01:33:29.927 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Oct 17 01:33:29.930 C7200-IO-FE(0): unicast MAC address: ca:00:7d:44:00:00
+Oct 17 01:33:29.930 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.930 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:29.930 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Oct 17 01:33:29.930 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:29.930 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:29.932 PA-FE-TX(1): unicast MAC address: ca:00:7d:44:00:1c
+Oct 17 01:33:30.171 CPU0: JIT: flushing data structures (compiled pages=238)
+Oct 17 01:33:30.211 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Oct 17 01:33:30.223 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:30.223 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:30.223 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Oct 17 01:33:30.223 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:30.223 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:30.224 PA-FE-TX(1): unicast MAC address: ca:00:7d:44:00:1c
+Oct 17 01:33:30.224 C7200-IO-FE(0): unicast MAC address: ca:00:7d:44:00:00
+Oct 17 01:33:30.225 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Oct 17 01:33:30.227 C7200-IO-FE(0): unicast MAC address: ca:00:7d:44:00:00
+Oct 17 01:33:30.227 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:30.227 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:30.227 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Oct 17 01:33:30.227 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:30.227 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:30.230 PA-FE-TX(1): unicast MAC address: ca:00:7d:44:00:1c
+Oct 17 01:33:30.245 CPU0: JIT: partial JIT flush (count=198)
+Oct 17 01:33:30.312 CPU0: JIT: flushing data structures (compiled pages=235)
+Oct 17 01:33:30.391 CPU0: JIT: partial JIT flush (count=188)
+Oct 17 01:33:30.453 CPU0: JIT: flushing data structures (compiled pages=233)
+Oct 17 01:33:30.526 CPU0: JIT: partial JIT flush (count=193)
+Oct 17 01:33:30.658 CPU0: JIT: flushing data structures (compiled pages=241)
+Oct 17 01:33:30.736 CPU0: JIT: partial JIT flush (count=204)
+Oct 17 01:33:30.812 CPU0: JIT: flushing data structures (compiled pages=238)
+Oct 17 01:33:30.877 CPU0: JIT: partial JIT flush (count=201)
+Oct 17 01:33:30.949 CPU0: JIT: flushing data structures (compiled pages=245)
+Oct 17 01:33:31.048 CPU0: JIT: partial JIT flush (count=191)
+Oct 17 01:33:31.114 CPU0: JIT: flushing data structures (compiled pages=250)
+Oct 17 01:33:31.229 CPU0: JIT: partial JIT flush (count=147)
+Oct 17 01:33:31.448 CPU0: JIT: flushing data structures (compiled pages=241)
+Oct 17 01:33:31.549 CPU0: JIT: partial JIT flush (count=187)
+Oct 17 01:33:32.169 CPU0: JIT: flushing data structures (compiled pages=243)
+Oct 17 01:33:32.276 CPU0: JIT: partial JIT flush (count=183)
+Oct 17 01:33:32.521 CPU0: JIT: flushing data structures (compiled pages=245)
+Oct 17 01:33:32.810 CPU0: JIT: partial JIT flush (count=186)
+Oct 17 01:33:32.934 CPU0: JIT: flushing data structures (compiled pages=247)
+Oct 17 01:33:33.016 ROM: unhandled syscall 0x0000001a at pc=0x608487b0 (a1=0x6649abfc,a2=0x0000001c,a3=0x64dee2f8)
+Oct 17 01:33:33.016 ROM: unhandled syscall 0x00000009 at pc=0x608487b0 (a1=0x6649abfc,a2=0x0000001c,a3=0x64dee2f8)
+Oct 17 01:33:33.078 CPU0: JIT: partial JIT flush (count=179)
+Oct 17 01:33:33.145 CPU0: JIT: flushing data structures (compiled pages=251)
+Oct 17 01:33:33.218 CPU0: JIT: partial JIT flush (count=190)
+Oct 17 01:33:33.270 CPU0: JIT: flushing data structures (compiled pages=240)
+Oct 17 01:33:33.330 CPU0: JIT: partial JIT flush (count=211)
+Oct 17 01:33:33.390 CPU0: JIT: flushing data structures (compiled pages=241)
+Oct 17 01:33:33.458 CPU0: JIT: partial JIT flush (count=190)
+Oct 17 01:33:33.519 CPU0: JIT: flushing data structures (compiled pages=246)
+Oct 17 01:33:33.673 CPU0: JIT: partial JIT flush (count=168)
+Oct 17 01:33:33.806 CPU0: JIT: flushing data structures (compiled pages=245)
+Oct 17 01:33:33.879 CPU0: JIT: partial JIT flush (count=200)
+Oct 17 01:33:33.886 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Oct 17 01:33:33.908 C7200-IO-FE(0): unicast MAC address: ca:00:7d:44:00:00
+Oct 17 01:33:33.934 CPU0: JIT: flushing data structures (compiled pages=241)
+Oct 17 01:33:34.003 CPU0: JIT: partial JIT flush (count=199)
+Oct 17 01:33:34.059 CPU0: JIT: flushing data structures (compiled pages=234)
+Oct 17 01:33:34.126 CPU0: JIT: partial JIT flush (count=199)
+Oct 17 01:33:34.190 CPU0: JIT: flushing data structures (compiled pages=238)
+Oct 17 01:33:34.225 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:34.225 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:33:34.225 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Oct 17 01:33:34.225 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:33:34.225 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:33:34.243 PA-FE-TX(1): unicast MAC address: ca:00:7d:44:00:1c
+Oct 17 01:33:34.253 CPU0: JIT: partial JIT flush (count=211)
+Oct 17 01:33:34.309 CPU0: JIT: flushing data structures (compiled pages=234)
+Oct 17 01:33:34.370 CPU0: JIT: partial JIT flush (count=210)
+Oct 17 01:33:34.435 CPU0: JIT: flushing data structures (compiled pages=238)
+Oct 17 01:33:34.508 CPU0: JIT: partial JIT flush (count=195)
+Oct 17 01:33:34.685 CPU0: JIT: flushing data structures (compiled pages=245)
+Oct 17 01:33:34.818 CPU0: JIT: partial JIT flush (count=178)
+Oct 17 01:33:34.884 CPU0: JIT: flushing data structures (compiled pages=239)
+Oct 17 01:33:34.964 CPU0: JIT: partial JIT flush (count=196)
+Oct 17 01:33:35.043 CPU0: JIT: flushing data structures (compiled pages=239)
+Oct 17 01:33:35.172 CPU0: JIT: partial JIT flush (count=184)
+Oct 17 01:33:35.230 ROM: trying to read bootvar 'RANDOM_NUM'
+Oct 17 01:33:35.455 CPU0: JIT: flushing data structures (compiled pages=246)
+Oct 17 01:33:35.601 CPU0: JIT: partial JIT flush (count=177)
+Oct 17 01:33:35.667 CPU0: JIT: flushing data structures (compiled pages=249)
+Oct 17 01:33:35.792 CPU0: JIT: partial JIT flush (count=170)
+Oct 17 01:33:35.810 ROM: trying to set bootvar 'BSI=0'
+Oct 17 01:33:35.811 ROM: trying to read bootvar 'RET_2_RCALTS'
+Oct 17 01:33:35.811 ROM: trying to set bootvar 'RET_2_RCALTS='
+Oct 17 01:33:35.884 CPU0: JIT: flushing data structures (compiled pages=248)
+Oct 17 01:33:39.211 CPU0: JIT: partial JIT flush (count=185)
+Oct 17 01:33:50.665 CPU0: JIT: flushing data structures (compiled pages=241)
+Oct 17 01:33:51.599 CPU0: JIT: partial JIT flush (count=184)
+Oct 17 01:33:55.911 CPU0: JIT: flushing data structures (compiled pages=237)
+Oct 17 01:33:59.031 CPU0: JIT: partial JIT flush (count=174)
+Oct 17 01:34:00.240 CPU0: JIT: flushing data structures (compiled pages=242)
+Oct 17 01:34:00.286 ROM: unhandled syscall 0x00000047 at pc=0x608487b0 (a1=0x00000001,a2=0x6095699c,a3=0x653edfc0)
+Oct 17 01:34:00.345 CPU0: JIT: partial JIT flush (count=193)
+Oct 17 01:34:00.416 CPU0: JIT: flushing data structures (compiled pages=246)
+Oct 17 01:34:00.498 CPU0: JIT: partial JIT flush (count=199)
+Oct 17 01:34:00.533 CPU0: MP_FPGA: read from addr 0x0, pc=0x6093ceec
+Oct 17 01:34:00.571 CPU0: JIT: flushing data structures (compiled pages=256)
+Oct 17 01:34:00.653 CPU0: JIT: partial JIT flush (count=194)
+Oct 17 01:34:00.722 CPU0: JIT: flushing data structures (compiled pages=248)
+Oct 17 01:34:00.798 CPU0: JIT: partial JIT flush (count=200)
+Oct 17 01:34:00.866 CPU0: JIT: flushing data structures (compiled pages=249)
+Oct 17 01:34:00.938 CPU0: JIT: partial JIT flush (count=197)
+Oct 17 01:34:01.012 CPU0: JIT: flushing data structures (compiled pages=258)
+Oct 17 01:34:01.092 CPU0: JIT: partial JIT flush (count=200)
+Oct 17 01:34:01.164 CPU0: JIT: flushing data structures (compiled pages=253)
+Oct 17 01:34:01.245 CPU0: JIT: partial JIT flush (count=195)
+Oct 17 01:34:01.346 CPU0: JIT: flushing data structures (compiled pages=257)
+Oct 17 01:34:05.192 CPU0: JIT: partial JIT flush (count=170)
+Oct 17 01:34:05.265 ROM: trying to set bootvar 'RANDOM_NUM=223510849'
+Oct 17 01:34:20.849 CPU0: JIT: flushing data structures (compiled pages=257)
+Oct 17 01:34:28.512 CPU0: JIT: partial JIT flush (count=179)
+Oct 17 01:34:37.696 CPU0: JIT: flushing data structures (compiled pages=257)
+Oct 17 01:35:33.090 CPU0: JIT: partial JIT flush (count=139)
+Oct 17 01:35:54.242 CPU0: JIT: flushing data structures (compiled pages=258)
+Oct 17 01:35:57.704 CPU0: JIT: partial JIT flush (count=169)
+Oct 17 01:36:08.885 CPU0: JIT: flushing data structures (compiled pages=260)
+Oct 17 01:36:09.719 CPU0: JIT: partial JIT flush (count=179)
+Oct 17 01:36:27.869 CPU0: JIT: flushing data structures (compiled pages=257)
+Oct 17 01:36:28.009 CPU0: JIT: partial JIT flush (count=198)
+Oct 17 01:36:28.063 CPU0: JIT: flushing data structures (compiled pages=257)
+Oct 17 01:36:28.483 CPU0: JIT: partial JIT flush (count=190)
+Oct 17 01:36:33.008 CPU0: JIT: flushing data structures (compiled pages=257)
+Oct 17 01:36:33.081 CPU0: JIT: partial JIT flush (count=201)
+Oct 17 01:36:33.083 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:36:33.083 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Oct 17 01:36:33.083 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Oct 17 01:36:33.083 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Oct 17 01:36:33.083 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Oct 17 01:36:33.105 PA-FE-TX(1): unicast MAC address: ca:00:7d:44:00:1c
+Oct 17 01:36:33.105 PA-FE-TX(1): unicast MAC address: ca:00:7d:44:00:1c
+Oct 17 01:36:33.136 CPU0: JIT: flushing data structures (compiled pages=261)
+Oct 17 01:36:33.194 CPU0: JIT: partial JIT flush (count=210)
+Oct 17 01:36:33.286 CPU0: JIT: flushing data structures (compiled pages=260)
+Oct 17 01:36:35.148 CPU0: JIT: partial JIT flush (count=183)
+Oct 17 01:36:36.089 CPU0: JIT: flushing data structures (compiled pages=264)
+Oct 17 01:36:37.713 CPU0: JIT: partial JIT flush (count=185)
+Oct 17 01:36:43.124 CPU0: JIT: flushing data structures (compiled pages=269)
+Oct 17 01:36:43.194 CPU0: JIT: partial JIT flush (count=196)
+Oct 17 01:36:46.252 CPU0: JIT: flushing data structures (compiled pages=268)
+Oct 17 01:36:47.585 CPU0: JIT: partial JIT flush (count=176)
+Oct 17 01:37:01.326 CPU0: JIT: flushing data structures (compiled pages=266)
+Oct 17 01:37:11.144 CPU0: JIT: partial JIT flush (count=169)
+Oct 17 01:37:11.283 CPU0: JIT: flushing data structures (compiled pages=302)
+Oct 17 01:37:12.488 CPU0: JIT: partial JIT flush (count=183)
+Oct 17 01:37:14.291 CPU0: JIT: flushing data structures (compiled pages=354)
+Oct 17 01:37:18.818 CPU0: JIT: partial JIT flush (count=183)
+Oct 17 01:37:24.252 CPU0: JIT: flushing data structures (compiled pages=358)
+Oct 17 01:37:28.710 CPU0: JIT: partial JIT flush (count=174)
+Oct 17 01:37:35.696 CPU0: JIT: flushing data structures (compiled pages=359)
+Oct 17 01:38:00.476 CPU0: JIT: partial JIT flush (count=155)
+Oct 17 01:38:08.843 CPU0: JIT: flushing data structures (compiled pages=364)
+Oct 17 01:38:27.903 CPU0: JIT: partial JIT flush (count=166)
+Oct 17 01:38:28.482 CPU0: JIT: flushing data structures (compiled pages=356)
+Oct 17 01:38:29.801 CPU0: JIT: partial JIT flush (count=195)
+Oct 17 01:38:30.937 CPU0: JIT: flushing data structures (compiled pages=402)
+Oct 17 01:38:38.436 CPU0: JIT: partial JIT flush (count=174)
+Oct 17 01:38:39.217 CPU0: JIT: flushing data structures (compiled pages=907)
+Oct 17 01:38:40.922 CPU0: JIT: partial JIT flush (count=107)
+Oct 17 01:38:42.191 CPU0: JIT: flushing data structures (compiled pages=2981)
+Oct 17 01:38:43.208 CPU0: JIT: partial JIT flush (count=129)
+Oct 17 01:38:44.200 CPU0: JIT: flushing data structures (compiled pages=4140)
+Oct 17 01:38:45.081 CPU0: JIT: partial JIT flush (count=129)
+Oct 17 01:38:45.737 CPU0: JIT: flushing data structures (compiled pages=5138)
+Oct 17 01:38:47.584 CPU0: JIT: partial JIT flush (count=107)
+Oct 17 01:38:48.379 CPU0: JIT: flushing data structures (compiled pages=6808)
+Oct 17 01:38:49.273 CPU0: JIT: partial JIT flush (count=132)
+Oct 17 01:38:50.926 CPU0: JIT: flushing data structures (compiled pages=8376)
+Oct 17 01:38:52.187 CPU0: JIT: partial JIT flush (count=129)
+Oct 17 01:38:52.534 CPU0: JIT: flushing data structures (compiled pages=9161)
+Oct 17 01:38:52.653 CPU0: JIT: partial JIT flush (count=205)
+Oct 17 01:38:53.193 CPU0: JIT: flushing data structures (compiled pages=9561)
+Oct 17 01:38:54.192 CPU0: JIT: partial JIT flush (count=131)
+Oct 17 01:38:55.192 CPU0: JIT: flushing data structures (compiled pages=10731)
+Oct 17 01:38:55.698 CPU0: JIT: partial JIT flush (count=157)
+Oct 17 01:38:56.416 CPU0: JIT: flushing data structures (compiled pages=11309)
+Oct 17 01:38:57.382 CPU0: JIT: partial JIT flush (count=139)
+Oct 17 01:38:58.277 CPU0: JIT: flushing data structures (compiled pages=12138)
+Oct 17 01:38:59.205 CPU0: JIT: partial JIT flush (count=132)
+Oct 17 01:38:59.753 CPU0: JIT: flushing data structures (compiled pages=12985)
+Oct 17 01:39:00.929 CPU0: JIT: partial JIT flush (count=130)
+Oct 17 01:39:01.735 CPU0: JIT: flushing data structures (compiled pages=14184)
+Oct 17 01:39:02.332 CPU0: JIT: partial JIT flush (count=141)
+Oct 17 01:39:03.277 CPU0: JIT: flushing data structures (compiled pages=15263)
+Oct 17 01:39:03.525 CPU0: JIT: partial JIT flush (count=175)
+Oct 17 01:39:03.587 CPU0: JIT: flushing data structures (compiled pages=15400)
+Oct 17 01:39:04.333 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:39:05.283 CPU0: JIT: flushing data structures (compiled pages=17059)
+Oct 17 01:39:06.199 CPU0: JIT: partial JIT flush (count=102)
+Oct 17 01:39:07.196 CPU0: JIT: flushing data structures (compiled pages=19131)
+Oct 17 01:39:08.081 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:39:08.561 CPU0: JIT: flushing data structures (compiled pages=20572)
+Oct 17 01:39:09.194 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:39:10.200 CPU0: JIT: flushing data structures (compiled pages=22389)
+Oct 17 01:39:10.958 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:39:11.588 CPU0: JIT: flushing data structures (compiled pages=23799)
+Oct 17 01:39:12.296 CPU0: JIT: partial JIT flush (count=128)
+Oct 17 01:39:13.218 CPU0: JIT: flushing data structures (compiled pages=25411)
+Oct 17 01:39:14.189 CPU0: JIT: partial JIT flush (count=104)
+Oct 17 01:39:15.189 CPU0: JIT: flushing data structures (compiled pages=27568)
+Oct 17 01:39:15.704 CPU0: JIT: partial JIT flush (count=128)
+Oct 17 01:39:16.334 CPU0: JIT: flushing data structures (compiled pages=28844)
+Oct 17 01:39:17.303 CPU0: JIT: partial JIT flush (count=102)
+Oct 17 01:39:18.201 CPU0: JIT: flushing data structures (compiled pages=30703)
+Oct 17 01:39:18.839 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:39:19.387 CPU0: JIT: flushing data structures (compiled pages=31939)
+Oct 17 01:39:20.341 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:39:21.198 CPU0: JIT: flushing data structures (compiled pages=33860)
+Oct 17 01:39:22.201 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:39:22.738 CPU0: JIT: flushing data structures (compiled pages=35584)
+Oct 17 01:39:23.419 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:39:24.326 CPU0: JIT: flushing data structures (compiled pages=37193)
+Oct 17 01:39:25.326 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:39:26.191 CPU0: JIT: flushing data structures (compiled pages=39323)
+Oct 17 01:39:27.195 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:39:28.199 CPU0: JIT: flushing data structures (compiled pages=41378)
+Oct 17 01:39:28.440 CPU0: JIT: partial JIT flush (count=165)
+Oct 17 01:39:28.739 CPU0: JIT: flushing data structures (compiled pages=41875)
+Oct 17 01:39:29.316 CPU0: JIT: partial JIT flush (count=129)
+Oct 17 01:39:30.205 CPU0: JIT: flushing data structures (compiled pages=43511)
+Oct 17 01:39:31.190 CPU0: JIT: partial JIT flush (count=102)
+Oct 17 01:39:32.197 CPU0: JIT: flushing data structures (compiled pages=45674)
+Oct 17 01:39:32.587 CPU0: JIT: partial JIT flush (count=142)
+Oct 17 01:39:33.195 CPU0: JIT: flushing data structures (compiled pages=46606)
+Oct 17 01:39:34.186 CPU0: JIT: partial JIT flush (count=99)
+Oct 17 01:39:34.742 CPU0: JIT: flushing data structures (compiled pages=48103)
+Oct 17 01:39:35.580 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:39:36.193 CPU0: JIT: flushing data structures (compiled pages=49534)
+Oct 17 01:39:37.196 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:39:38.196 CPU0: JIT: flushing data structures (compiled pages=51429)
+Oct 17 01:39:38.560 CPU0: JIT: partial JIT flush (count=141)
+Oct 17 01:39:39.198 CPU0: JIT: flushing data structures (compiled pages=52320)
+Oct 17 01:39:40.188 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:39:40.746 CPU0: JIT: flushing data structures (compiled pages=53921)
+Oct 17 01:39:41.430 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:39:42.331 CPU0: JIT: flushing data structures (compiled pages=55653)
+Oct 17 01:39:43.198 CPU0: JIT: partial JIT flush (count=101)
+Oct 17 01:39:44.191 CPU0: JIT: flushing data structures (compiled pages=57677)
+Oct 17 01:39:45.189 CPU0: JIT: partial JIT flush (count=104)
+Oct 17 01:39:45.704 CPU0: JIT: flushing data structures (compiled pages=59366)
+Oct 17 01:39:46.342 CPU0: JIT: partial JIT flush (count=128)
+Oct 17 01:39:47.340 CPU0: JIT: flushing data structures (compiled pages=60915)
+Oct 17 01:39:48.221 CPU0: JIT: partial JIT flush (count=101)
+Oct 17 01:39:48.808 CPU0: JIT: flushing data structures (compiled pages=62422)
+Oct 17 01:39:49.343 CPU0: JIT: partial JIT flush (count=128)
+Oct 17 01:39:50.334 CPU0: JIT: flushing data structures (compiled pages=64079)
+Oct 17 01:39:51.193 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:39:52.190 CPU0: JIT: flushing data structures (compiled pages=66042)
+Oct 17 01:39:52.588 CPU0: JIT: partial JIT flush (count=140)
+Oct 17 01:39:53.356 CPU0: JIT: flushing data structures (compiled pages=67286)
+Oct 17 01:39:54.213 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:39:55.195 CPU0: JIT: flushing data structures (compiled pages=69175)
+Oct 17 01:39:56.192 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:39:57.185 CPU0: JIT: flushing data structures (compiled pages=71441)
+Oct 17 01:39:57.600 CPU0: JIT: partial JIT flush (count=139)
+Oct 17 01:39:58.366 CPU0: JIT: flushing data structures (compiled pages=72682)
+Oct 17 01:39:59.195 CPU0: JIT: partial JIT flush (count=128)
+Oct 17 01:40:00.191 CPU0: JIT: flushing data structures (compiled pages=74562)
+Oct 17 01:40:00.928 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:40:01.433 CPU0: JIT: flushing data structures (compiled pages=75925)
+Oct 17 01:40:02.218 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:40:03.190 CPU0: JIT: flushing data structures (compiled pages=77751)
+Oct 17 01:40:04.211 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:40:04.754 CPU0: JIT: flushing data structures (compiled pages=79526)
+Oct 17 01:40:05.702 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:40:06.382 CPU0: JIT: flushing data structures (compiled pages=81277)
+Oct 17 01:40:07.199 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:40:08.199 CPU0: JIT: flushing data structures (compiled pages=83108)
+Oct 17 01:40:08.819 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:40:09.389 CPU0: JIT: flushing data structures (compiled pages=84357)
+Oct 17 01:40:10.209 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:40:11.196 CPU0: JIT: flushing data structures (compiled pages=86322)
+Oct 17 01:40:12.087 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:40:12.444 CPU0: JIT: flushing data structures (compiled pages=87564)
+Oct 17 01:40:13.343 CPU0: JIT: partial JIT flush (count=124)
+Oct 17 01:40:14.219 CPU0: JIT: flushing data structures (compiled pages=89398)
+Oct 17 01:40:15.192 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:40:16.196 CPU0: JIT: flushing data structures (compiled pages=91704)
+Oct 17 01:40:16.741 CPU0: JIT: partial JIT flush (count=129)
+Oct 17 01:40:17.581 CPU0: JIT: flushing data structures (compiled pages=93074)
+Oct 17 01:40:18.393 CPU0: JIT: partial JIT flush (count=124)
+Oct 17 01:40:19.199 CPU0: JIT: flushing data structures (compiled pages=94937)
+Oct 17 01:40:20.195 CPU0: JIT: partial JIT flush (count=110)
+Oct 17 01:40:20.739 CPU0: JIT: flushing data structures (compiled pages=96423)
+Oct 17 01:40:21.466 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:40:22.339 CPU0: JIT: flushing data structures (compiled pages=98018)
+Oct 17 01:40:23.197 CPU0: JIT: partial JIT flush (count=122)
+Oct 17 01:40:24.195 CPU0: JIT: flushing data structures (compiled pages=100012)
+Oct 17 01:40:25.198 CPU0: JIT: partial JIT flush (count=104)
+Oct 17 01:40:25.703 CPU0: JIT: flushing data structures (compiled pages=101597)
+Oct 17 01:40:26.403 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:40:27.336 CPU0: JIT: flushing data structures (compiled pages=103252)
+Oct 17 01:40:28.198 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:40:28.471 CPU0: JIT: flushing data structures (compiled pages=104429)
+Oct 17 01:40:29.193 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:40:30.185 CPU0: JIT: flushing data structures (compiled pages=106338)
+Oct 17 01:40:30.744 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:40:31.400 CPU0: JIT: flushing data structures (compiled pages=107731)
+Oct 17 01:40:32.222 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:40:33.174 CPU0: JIT: flushing data structures (compiled pages=109707)
+Oct 17 01:40:33.468 CPU0: JIT: partial JIT flush (count=145)
+Oct 17 01:40:34.398 CPU0: JIT: flushing data structures (compiled pages=111060)
+Oct 17 01:40:35.330 CPU0: JIT: partial JIT flush (count=124)
+Oct 17 01:40:36.193 CPU0: JIT: flushing data structures (compiled pages=112951)
+Oct 17 01:40:37.192 CPU0: JIT: partial JIT flush (count=104)
+Oct 17 01:40:37.686 CPU0: JIT: flushing data structures (compiled pages=114617)
+Oct 17 01:40:38.415 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:40:39.079 CPU0: JIT: flushing data structures (compiled pages=116245)
+Oct 17 01:40:39.476 CPU0: JIT: partial JIT flush (count=136)
+Oct 17 01:40:40.404 CPU0: JIT: flushing data structures (compiled pages=117543)
+Oct 17 01:40:41.201 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:40:42.197 CPU0: JIT: flushing data structures (compiled pages=119559)
+Oct 17 01:40:42.745 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:40:43.409 CPU0: JIT: flushing data structures (compiled pages=120820)
+Oct 17 01:40:44.340 CPU0: JIT: partial JIT flush (count=104)
+Oct 17 01:40:45.194 CPU0: JIT: flushing data structures (compiled pages=122776)
+Oct 17 01:40:46.199 CPU0: JIT: partial JIT flush (count=102)
+Oct 17 01:40:47.193 CPU0: JIT: flushing data structures (compiled pages=124936)
+Oct 17 01:40:47.738 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:40:48.483 CPU0: JIT: flushing data structures (compiled pages=126270)
+Oct 17 01:40:49.205 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:40:50.198 CPU0: JIT: flushing data structures (compiled pages=128248)
+Oct 17 01:40:51.189 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:40:52.194 CPU0: JIT: flushing data structures (compiled pages=130393)
+Oct 17 01:40:52.484 CPU0: JIT: partial JIT flush (count=150)
+Oct 17 01:40:53.340 CPU0: JIT: flushing data structures (compiled pages=131524)
+Oct 17 01:40:54.191 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:40:55.207 CPU0: JIT: flushing data structures (compiled pages=133388)
+Oct 17 01:40:56.070 CPU0: JIT: partial JIT flush (count=102)
+Oct 17 01:40:56.750 CPU0: JIT: flushing data structures (compiled pages=135022)
+Oct 17 01:40:57.497 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:40:58.429 CPU0: JIT: flushing data structures (compiled pages=136814)
+Oct 17 01:40:59.194 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:41:00.188 CPU0: JIT: flushing data structures (compiled pages=138763)
+Oct 17 01:41:00.932 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:41:01.490 CPU0: JIT: flushing data structures (compiled pages=140038)
+Oct 17 01:41:02.334 CPU0: JIT: partial JIT flush (count=102)
+Oct 17 01:41:03.192 CPU0: JIT: flushing data structures (compiled pages=141908)
+Oct 17 01:41:04.198 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:41:05.188 CPU0: JIT: flushing data structures (compiled pages=144038)
+Oct 17 01:41:05.706 CPU0: JIT: partial JIT flush (count=129)
+Oct 17 01:41:06.446 CPU0: JIT: flushing data structures (compiled pages=145220)
+Oct 17 01:41:07.334 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:41:08.192 CPU0: JIT: flushing data structures (compiled pages=147107)
+Oct 17 01:41:08.816 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:41:09.500 CPU0: JIT: flushing data structures (compiled pages=148482)
+Oct 17 01:41:10.197 CPU0: JIT: partial JIT flush (count=128)
+Oct 17 01:41:11.197 CPU0: JIT: flushing data structures (compiled pages=150315)
+Oct 17 01:41:12.191 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:41:12.586 CPU0: JIT: flushing data structures (compiled pages=151586)
+Oct 17 01:41:13.393 CPU0: JIT: partial JIT flush (count=124)
+Oct 17 01:41:14.209 CPU0: JIT: flushing data structures (compiled pages=153388)
+Oct 17 01:41:15.192 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:41:16.194 CPU0: JIT: flushing data structures (compiled pages=155609)
+Oct 17 01:41:17.070 CPU0: JIT: partial JIT flush (count=124)
+Oct 17 01:41:17.586 CPU0: JIT: flushing data structures (compiled pages=157033)
+Oct 17 01:41:18.455 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:41:19.226 CPU0: JIT: flushing data structures (compiled pages=158618)
+Oct 17 01:41:20.196 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:41:20.923 CPU0: JIT: flushing data structures (compiled pages=160430)
+Oct 17 01:41:21.524 CPU0: JIT: partial JIT flush (count=128)
+Oct 17 01:41:22.391 CPU0: JIT: flushing data structures (compiled pages=161980)
+Oct 17 01:41:23.194 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:41:24.195 CPU0: JIT: flushing data structures (compiled pages=163909)
+Oct 17 01:41:25.188 CPU0: JIT: partial JIT flush (count=102)
+Oct 17 01:41:25.735 CPU0: JIT: flushing data structures (compiled pages=165485)
+Oct 17 01:41:26.520 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:41:27.474 CPU0: JIT: flushing data structures (compiled pages=167354)
+Oct 17 01:41:28.203 CPU0: JIT: partial JIT flush (count=125)
+Oct 17 01:41:28.476 CPU0: JIT: flushing data structures (compiled pages=168435)
+Oct 17 01:41:29.191 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:41:30.214 CPU0: JIT: flushing data structures (compiled pages=170161)
+Oct 17 01:41:30.741 CPU0: JIT: partial JIT flush (count=129)
+Oct 17 01:41:31.506 CPU0: JIT: flushing data structures (compiled pages=171408)
+Oct 17 01:41:32.209 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:41:33.169 CPU0: JIT: flushing data structures (compiled pages=173145)
+Oct 17 01:41:33.530 CPU0: JIT: partial JIT flush (count=139)
+Oct 17 01:41:34.476 CPU0: JIT: flushing data structures (compiled pages=174497)
+Oct 17 01:41:35.326 CPU0: JIT: partial JIT flush (count=103)
+Oct 17 01:41:36.185 CPU0: JIT: flushing data structures (compiled pages=176571)
+Oct 17 01:41:36.745 CPU0: JIT: partial JIT flush (count=128)
+Oct 17 01:41:37.539 CPU0: JIT: flushing data structures (compiled pages=177976)
+Oct 17 01:41:38.330 CPU0: JIT: partial JIT flush (count=126)
+Oct 17 01:41:38.746 CPU0: JIT: flushing data structures (compiled pages=179186)
+Oct 17 01:41:39.493 CPU0: JIT: partial JIT flush (count=127)
+Oct 17 01:41:40.348 CPU0: JIT: flushing data structures (compiled pages=180483)
+Oct 17 01:41:41.191 CPU0: JIT: partial JIT flush (count=124)
+Oct 17 01:41:42.190 CPU0: JIT: flushing data structures (compiled pages=181613)
+Oct 17 01:41:42.585 CPU0: JIT: partial JIT flush (count=163)
+Oct 17 01:41:43.474 CPU0: JIT: flushing data structures (compiled pages=182343)
+Oct 17 01:41:44.194 CPU0: JIT: partial JIT flush (count=136)
+Oct 17 01:41:45.192 CPU0: JIT: flushing data structures (compiled pages=183512)
+Oct 17 01:41:46.189 CPU0: JIT: partial JIT flush (count=123)
+Oct 17 01:41:47.199 CPU0: JIT: flushing data structures (compiled pages=184830)
+Oct 17 01:41:47.753 CPU0: JIT: partial JIT flush (count=142)
+Oct 17 01:41:48.481 CPU0: JIT: flushing data structures (compiled pages=185689)
+Oct 17 01:41:49.198 CPU0: JIT: partial JIT flush (count=136)
+Oct 17 01:41:50.210 CPU0: JIT: flushing data structures (compiled pages=186799)
+Oct 17 01:41:51.214 CPU0: JIT: partial JIT flush (count=124)
+Oct 17 01:41:52.070 CPU0: JIT: flushing data structures (compiled pages=188069)
+Oct 17 01:41:52.540 CPU0: JIT: partial JIT flush (count=144)
+Oct 17 01:41:53.348 CPU0: JIT: flushing data structures (compiled pages=188839)
+Oct 17 01:41:54.231 CPU0: JIT: partial JIT flush (count=135)
+Oct 17 01:41:55.193 CPU0: JIT: flushing data structures (compiled pages=189738)
+Oct 17 01:41:56.206 CPU0: JIT: partial JIT flush (count=124)
+Oct 17 01:41:57.185 CPU0: JIT: flushing data structures (compiled pages=191147)
+Oct 17 01:41:57.583 CPU0: JIT: partial JIT flush (count=147)
+Oct 17 01:41:58.490 CPU0: JIT: flushing data structures (compiled pages=191976)
+Oct 17 01:41:59.196 CPU0: JIT: partial JIT flush (count=145)
+Oct 17 01:42:00.190 CPU0: JIT: flushing data structures (compiled pages=192996)
+Oct 17 01:42:00.587 CPU0: JIT: partial JIT flush (count=155)
+Oct 17 01:42:10.152 CPU0: JIT: flushing data structures (compiled pages=193224)
+Oct 17 01:42:10.785 CPU0: JIT: partial JIT flush (count=180)
+Oct 17 01:42:14.689 Calendar: reset
+Oct 17 01:42:14.689 Calendar: reset
+Oct 17 01:42:14.693 ROM: trying to set bootvar 'RET_2_RTS=01:42:14 UTC Tue Oct 17 2017'
+Oct 17 01:42:14.695 ROM: trying to set bootvar 'RET_2_RCALTS=1508204534'
+Oct 17 01:42:14.787 CPU0: JIT: flushing data structures (compiled pages=193226)
+Oct 17 01:42:15.584 CPU0: JIT: partial JIT flush (count=193)
+Oct 17 01:42:20.700 CPU0: JIT: flushing data structures (compiled pages=193226)
+Oct 17 01:42:20.868 CPU0: CPU_STATE: Halting CPU (old state=0)...
+Oct 17 01:42:20.868 CPU0: CPU_STATE: Halting CPU (old state=1)...
+Oct 17 01:42:20.868 CPU0: JIT: PC=0, halting CPU.
+Oct 17 01:42:20.887 CPU0: CPU_STATE: Halting CPU (old state=1)...
+Oct 17 01:42:20.915 VM: shutdown procedure engaged.
+Oct 17 01:42:20.915 VM_OBJECT: Shutdown of object "io_fpga"
+Oct 17 01:42:20.915 DEVICE: Removal of device io_fpga, fd=-1, host_addr=0x0, flags=0
+Oct 17 01:42:20.915 VM_OBJECT: Shutdown of object "mp_fpga"
+Oct 17 01:42:20.915 DEVICE: Removal of device mp_fpga, fd=-1, host_addr=0x0, flags=0
+Oct 17 01:42:20.915 VM_OBJECT: Shutdown of object "disk0"
+Oct 17 01:42:20.915 DEVICE: Removal of device disk0, fd=-1, host_addr=0x0, flags=2
+Oct 17 01:42:20.915 VM_OBJECT: Shutdown of object "clpd6729"
+Oct 17 01:42:20.915 VM_OBJECT: Shutdown of object "mem_bswap"
+Oct 17 01:42:20.915 DEVICE: Removal of device mem_bswap, fd=-1, host_addr=0x0, flags=0
+Oct 17 01:42:20.915 VM_OBJECT: Shutdown of object "rom"
+Oct 17 01:42:20.915 DEVICE: Removal of device rom, fd=-1, host_addr=0x0, flags=2
+Oct 17 01:42:20.915 VM_OBJECT: Shutdown of object "ram"
+Oct 17 01:42:20.915 DEVICE: Removal of device ram, fd=12, host_addr=0x28050000, flags=2
+Oct 17 01:42:20.915 MMAP: unmapping of device 'ram', fd=12, host_addr=0x28050000, len=0x10000000
+Oct 17 01:42:34.147 VM_OBJECT: Shutdown of object "sram1_bswap"
+Oct 17 01:42:34.147 DEVICE: Removal of device sram1_bswap, fd=-1, host_addr=0x0, flags=0
+Oct 17 01:42:34.148 VM_OBJECT: Shutdown of object "sram0_bswap"
+Oct 17 01:42:34.148 DEVICE: Removal of device sram0_bswap, fd=-1, host_addr=0x0, flags=0
+Oct 17 01:42:34.148 VM_OBJECT: Shutdown of object "gt64010"
+Oct 17 01:42:34.148 DEVICE: Removal of device gt64010, fd=-1, host_addr=0x0, flags=0
+Oct 17 01:42:34.148 VM_OBJECT: Shutdown of object "zero"
+Oct 17 01:42:34.148 DEVICE: Removal of device zero, fd=-1, host_addr=0x0, flags=0
+Oct 17 01:42:34.148 VM_OBJECT: Shutdown of object "nvram"
+Oct 17 01:42:34.148 DEVICE: Removal of device nvram, fd=9, host_addr=0x46c0000, flags=9
+Oct 17 01:42:34.149 MMAP: unmapping of device 'nvram', fd=9, host_addr=0x46c0000, len=0x20000
+Oct 17 01:42:34.150 VM_OBJECT: Shutdown of object "bootflash"
+Oct 17 01:42:34.150 DEVICE: Removal of device bootflash, fd=8, host_addr=0x3ec0000, flags=1
+Oct 17 01:42:34.150 MMAP: unmapping of device 'bootflash', fd=8, host_addr=0x3ec0000, len=0x800000
+Oct 17 01:42:34.151 VM_OBJECT: Shutdown of object "remote_ctrl"
+Oct 17 01:42:34.151 DEVICE: Removal of device remote_ctrl, fd=-1, host_addr=0x0, flags=0
+Oct 17 01:42:34.151 VM: removing PCI busses.
+Oct 17 01:42:34.151 DEVICE: Removal of device pci_io, fd=-1, host_addr=0x0, flags=0
+Oct 17 01:42:34.151 VM: deleting VTTY.
+Oct 17 01:42:34.151 VM: deleting system CPUs.
+Oct 17 01:42:34.151 CPU0: CPU_STATE: Halting CPU (old state=1)...
+Oct 17 01:42:34.155 VM: shutdown procedure completed.

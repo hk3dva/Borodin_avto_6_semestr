@@ -1,0 +1,101 @@
+Cisco Router Simulation Platform (version 0.2.8-RC2-x86)
+Copyright (c) 2005-2007 Christophe Fillot.
+Build date: Oct 14 2007 10:57:14
+
+Usage: /cygdrive/d/Dynamips.v.0.2.8RC2/dynamips-w2000 [options] <ios_image>
+
+Available options:
+  -H [<ip_address>:]<tcp_port> : Run in hypervisor mode
+
+  -P <platform>      : Platform to emulate (7200, 3600, 2691, 3725, 3745, 2600 or 1700) (default: 7200)
+
+  -l <log_file>      : Set logging file (default is dynamips_log.txt)
+  -j                 : Disable the JIT compiler, very slow
+  --exec-area <size> : Set the exec area size (default: 16 Mb)
+  --idle-pc <pc>     : Set the idle PC (default: disabled)
+  --timer-itv <val>  : Timer IRQ interval check (default: 1000)
+
+  -i <instance>      : Set instance ID
+  -r <ram_size>      : Set the virtual RAM size (default: 256 Mb)
+  -o <rom_size>      : Set the virtual ROM size (default: 4 Mb)
+  -n <nvram_size>    : Set the NVRAM size (default: 128 Kb)
+  -c <conf_reg>      : Set the configuration register (default: 0x2102)
+  -m <mac_addr>      : Set the MAC address of the chassis
+                       (default: automatically generated)
+  -C <cfg_file>      : Import an IOS configuration file into NVRAM
+  -X                 : Do not use a file to simulate RAM (faster)
+  -G <ghost_file>    : Use a ghost file to simulate RAM
+  -g <ghost_file>    : Generate a ghost RAM file
+  --sparse-mem       : Use sparse memory
+  -R <rom_file>      : Load an alternate ROM (default: embedded)
+  -k <clock_div>     : Set the clock divisor (default: 4)
+
+  -T <port>          : Console is on TCP <port>
+  -U <si_desc>       : Console in on serial interface <si_desc>
+                       (default is on the terminal)
+
+  -A <port>          : AUX is on TCP <port>
+  -B <si_desc>       : AUX is on serial interface <si_desc>
+                       (default is no AUX port)
+
+  --disk0 <size>     : Set PCMCIA ATA disk0: size (default: 64 Mb)
+  --disk1 <size>     : Set PCMCIA ATA disk1: size (default: 0 Mb)
+
+  -t <npe_type>      : Select NPE type (default: "npe-200")
+  -M <midplane>      : Select Midplane ("std" or "vxr")
+  -p <pa_desc>       : Define a Port Adapter
+  -s <pa_nio>        : Bind a Network IO interface to a Port Adapter
+
+  -a <cfg_file>      : Virtual ATM switch configuration file
+  -f <cfg_file>      : Virtual Frame-Relay switch configuration file
+  -E <cfg_file>      : Virtual Ethernet switch configuration file
+  -b <cfg_file>      : Virtual bridge configuration file
+  -e                 : Show network device list of the host machine
+
+<si_desc> format:
+   "device{:baudrate{:databits{:parity{:stopbits{:hwflow}}}}}}"
+
+<pa_desc> format:
+   "slot:sub_slot:pa_driver"
+
+<pa_nio> format:
+   "slot:port:netio_type{:netio_parameters}"
+
+Available C7200 NPE drivers:
+  * npe-100 
+  * npe-150 
+  * npe-175 
+  * npe-200 
+  * npe-225 
+  * npe-300 
+  * npe-400 
+  * npe-g1 (NOT WORKING)
+  * npe-g2 (NOT WORKING)
+
+Available C7200 Port Adapter (PA) drivers:
+  * C7200-IO-FE 
+  * C7200-IO-2FE (NOT WORKING)
+  * C7200-IO-GE-E (NOT WORKING)
+  * PA-FE-TX 
+  * PA-2FE-TX (NOT WORKING)
+  * PA-GE (NOT WORKING)
+  * PA-4E 
+  * PA-8E 
+  * PA-4T+ 
+  * PA-8T 
+  * PA-A1 
+  * PA-POS-OC3 
+  * PA-4B (NOT WORKING)
+  * PA-MC-8TE1 (NOT WORKING)
+
+Available NETIO types:
+  * unix       : UNIX local sockets
+  * vde        : Virtual Distributed Ethernet / UML switch
+  * tap        : Linux/FreeBSD TAP device
+  * udp        : UDP sockets
+  * tcp_cli    : TCP client
+  * tcp_ser    : TCP server
+  * gen_eth    : Generic Ethernet device (PCAP)
+  * fifo       : FIFO (intra-hypervisor)
+  * null       : Null device
+
