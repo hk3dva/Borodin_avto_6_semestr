@@ -177,8 +177,8 @@ def automatic_setting(params, variant):
             try:
                 console = wsh.AppActivate('Командная строка')
                 break
-            except:
-                pass
+            except Exception as e:
+                print('Ошибка открытия окна')
 
         # Вход
         time.sleep(1)
