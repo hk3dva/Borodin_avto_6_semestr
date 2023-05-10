@@ -180,10 +180,11 @@ def automatic_setting(params, variant):
             except Exception as e:
                 print('Ошибка открытия окна')
 
+        time.sleep(2)
         # Вход
-        time.sleep(1)
+        time.sleep(2)
         wsh.SendKeys(commands[0] + '{ENTER}')
-        time.sleep(1)
+        time.sleep(2)
         wsh.SendKeys(commands[1] + '{ENTER}')
         time.sleep(10)
         wsh.SendKeys('{ENTER}')
@@ -208,6 +209,8 @@ def automatic_setting(params, variant):
         # Создание Пользователя (username=cisco password=cisco1 и тд.)
         conf(wsh)
         wsh.SendKeys('username cisco password cisco' + files[num].split(".")[0][1] + '{ENTER}')
+        time.sleep(2)
+        wsh.SendKeys('username admin privilege 15 secret admin{ENTER}')
         time.sleep(2)
         leave(wsh)
 
@@ -242,6 +245,8 @@ def automatic_setting(params, variant):
         conf(wsh)
         wsh.SendKeys('Line vty 0 4{ENTER}')
         time.sleep(2)
+        wsh.SendKeys('Login local{ENTER}')
+        time.sleep(2)
         wsh.SendKeys('transport input ssh{ENTER}')
         time.sleep(2)
         leave(wsh)
@@ -260,27 +265,27 @@ def automatic_setting(params, variant):
 
         # Журналирование всех попыток входа в маршрутизаторы с внешних IP - адресов.
         conf(wsh)
-        wsh.SendKeys('Access-list 1 permit any log{ENTER}')
+        wsh.SendKeys('Access-list 1 deny any log{ENTER}')   # deny
         time.sleep(2)
 
         # Доступ только из главного маршрутизатора
         if num != (int(params['1'][0][1]) - 1):
-            ip, mask = get_loopback_ip(params, int(params['1'][0][1]) - 1)
+            ip, mask = get_start_net_ip(params, int(params['1'][0][1]) - 1)
+            ip = [int(el) for el in ip.split('.')]
+            ip[-1] += 1
+
             mask = mask.split('.')
             mask[0] = 255 - int(mask[0])
             mask[1] = 255 - int(mask[1])
             mask[2] = 255 - int(mask[2])
             mask[3] = 255 - int(mask[3])
-            wsh.SendKeys('access-list 2 permit ' + ip + ' ' + '.'.join([str(el) for el in mask]) + ' log{ENTER}')
+            wsh.SendKeys('access-list 1 permit ' + '.'.join([str(el) for el in ip]) + ' ' + '.'.join([str(el) for el in mask]) + ' log{ENTER}')
             time.sleep(2)
 
         wsh.SendKeys('line vty 0 4{ENTER}')
         time.sleep(2)
         wsh.SendKeys('access-class 1 in{ENTER}')
         time.sleep(2)
-        if num != (int(params['1'][0][1]) - 1):
-            wsh.SendKeys('access-class 2 in{ENTER}')
-            time.sleep(2)
 
         leave(wsh)
 
@@ -331,7 +336,7 @@ def automatic_setting(params, variant):
             ip, mask = get_loopback_ip(params, i)
             if i == num:
                 continue
-            if i < num :
+            if i < num:
                 ip_1, mask_1 = get_start_net_ip(params, num - 1)
                 ip_1 = [int(el) for el in ip_1.split('.')]
                 ip_1[-1] += 1
@@ -350,7 +355,6 @@ def automatic_setting(params, variant):
             wsh.SendKeys('ip route ' + ip + ' ' + mask + ' ' + ip_1 + '{ENTER}')
             time.sleep(2)
         leave(wsh)
-
 
         # сохранение результата
         wsh.SendKeys('write{ENTER}')
