@@ -274,12 +274,7 @@ def automatic_setting(params, variant):
             ip = [int(el) for el in ip.split('.')]
             ip[-1] += 1
 
-            mask = mask.split('.')
-            mask[0] = 255 - int(mask[0])
-            mask[1] = 255 - int(mask[1])
-            mask[2] = 255 - int(mask[2])
-            mask[3] = 255 - int(mask[3])
-            wsh.SendKeys('access-list 1 permit ' + '.'.join([str(el) for el in ip]) + ' ' + '.'.join([str(el) for el in mask]) + ' log{ENTER}')
+            wsh.SendKeys('access-list 1 permit ' + '.'.join([str(el) for el in ip]) + ' log{ENTER}')
             time.sleep(2)
 
         wsh.SendKeys('line vty 0 4{ENTER}')
