@@ -158,7 +158,7 @@ def get_start_net_ip(params, num):
     mask_len = cods[mask]
     new_mask_len = cods[params['7'][r_num]]
     if params['8'][r_num] == 'последняя':
-        ip[-1] = int(mask_len[1] / new_mask_len[1]) * (int(mask_len[1] / new_mask_len[1]) - 1)
+        ip[-1] = int(mask_len[1] / new_mask_len[1]) * (int(mask_len[1] / int(mask_len[1] / new_mask_len[1])) - 1)
     ip_res = ip
     return '.'.join([str(el) for el in ip_res]), new_mask_len[0]
 
@@ -274,12 +274,7 @@ def automatic_setting(params, variant):
             ip = [int(el) for el in ip.split('.')]
             ip[-1] += 1
 
-            mask = mask.split('.')
-            mask[0] = 255 - int(mask[0])
-            mask[1] = 255 - int(mask[1])
-            mask[2] = 255 - int(mask[2])
-            mask[3] = 255 - int(mask[3])
-            wsh.SendKeys('access-list 1 permit ' + '.'.join([str(el) for el in ip]) + ' ' + '.'.join([str(el) for el in mask]) + ' log{ENTER}')
+            wsh.SendKeys('access-list 1 permit ' + '.'.join([str(el) for el in ip]) + ' log{ENTER}')
             time.sleep(2)
 
         wsh.SendKeys('line vty 0 4{ENTER}')
@@ -374,4 +369,4 @@ def generate(variant):
 
 
 if __name__ == '__main__':
-    generate('151111321')
+    generate('151111121')
